@@ -1,11 +1,18 @@
 {
-  "name": "sanity-nextjs-vercel-example",
-  "version": "0.0.0",
+  "name": "conrusso.com",
   "private": true,
-  "description": "A bare bones example of a Vercel-deployable project with a Next.js frontend and a Sanity Studio on /studio",
   "devDependencies": {
     "concurrently": "^5.3.0",
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^2.2.1"
   },
   "scripts": {
     "dev": "concurrently \"next --port $PORT\" \"cd studio && sanity start\"",
@@ -14,11 +21,12 @@
     "postinstall": "lerna bootstrap"
   },
   "keywords": [],
-  "author": "Sanity.io <hello@sanity.io>",
-  "license": "MIT",
   "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/cli": "^2.0.5",
-    "next": "^9.5.5",
+    "@sanity/client": "^2.2.6",
+    "next": "^10.0.9",
+    "next-sanity-image": "^1.0.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   }

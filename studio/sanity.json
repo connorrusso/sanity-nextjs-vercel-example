@@ -1,12 +1,12 @@
 {
   "root": true,
+  "api": {
+    "projectId": "jmry6gtp",
+    "dataset": "production"
+  },
   "project": {
     "name": "Sanity Studio",
     "basePath": "/studio"
-  },
-  "api": {
-    "projectId": "PLACEHOLDER-SEE-README",
-    "dataset": "PLACEHOLDER-SEE-README"
   },
   "plugins": [
     "@sanity/base",

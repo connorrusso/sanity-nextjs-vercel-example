@@ -1,0 +1,25 @@
+
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["react", "prettier"],
+  "rules": {
+    // sets default prettier rules, but I turned off semicolon requirement
+    "prettier/prettier": "error",
+    "semi": 0,
+    "singleQuote": 0,
+    // allows for js or jsx extensions
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": 0,
+    // turns off required prop types
+    "react/forbid-prop-types": [0, { "forbid": ["any"] }],
+    "react/prop-types": 0,
+    "import/prefer-default-export": 0,
+    "no-param-reassign":"off",
+    "no-nested-ternary":"off",
+    "react/no-unescaped-entities": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
